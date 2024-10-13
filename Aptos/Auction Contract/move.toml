@@ -1,0 +1,13 @@
+[package]
+name = "nft_auction"
+version = "0.0.1"
+authors = ["Ranadeep <ranadeep0907@gmail.com>"]
+license = "Apache-2.0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib", rev = "main" }
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib", rev = "main" }
+
+[build]
+targets = ["0xaa57867cb6e5354e9087c3de1a9383aa982c73abd87e6ad999e49ba25986bc44::auction"]
